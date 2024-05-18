@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="#">
+
+    <meta name="title" content="IT Council">
+	<meta name="description" content="IT Council is a professionally managed modern Software Technology Training Company that trains students, transforms them into professionals">
+	<meta name="keywords" content="IT Council, Software Company in Banglore, Best software training in Banglore, RPA Job training, Web Development Training, Best Cyber Security training institute in Banglore, Best Cyber Security Training institute in Banglore with placement, Security testing, penetration testing, best training institute in Banglore with placement">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" ></script>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/toplogo.svg">
+    <title>IT-Council</title>
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/css/themify-icons.css" rel="stylesheet">
+    <link href="./assets/css/flaticon.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="./assets/css/owl.theme.css" rel="stylesheet">
+    <link href="./assets/css/slick.css" rel="stylesheet">
+    <link href="./assets/css/slick-theme.css" rel="stylesheet">
+    <link href="./assets/css/swiper.min.css" rel="stylesheet">
+    <link href="./assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="./assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="./assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Book a Service</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="ttm-contactform" class=" ttm-contactform wrap-form clearfix" method="post" action="#">
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- <label>
+                                <span class="text-input"> -->
+                            <input id="name1" name="name" type="text" value="" class="form-control"
+                                placeholder="Your Name" required="required">
+                            <!-- </span>
+                            </label> -->
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <label>
+                                <span class="text-input"> -->
+                            <input id="email1" name="email" type="email" value="" class="form-control"
+                                placeholder="Your Email" required="required">
+                            <!-- </span>
+                            </label> -->
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <input id="number1" name="phone" type="text" value="" class="form-control"
+                                placeholder="Your Phone" required="required">
+
+                        </div>
+                        <div class="col-md-6">
+                            <input id="subject1" name="subject" type="text" value="" class="form-control"
+                                placeholder="Your Subject" required="required">
+                        </div>
+                    </div><br>
+                    <!-- <label>
+                        <span class="text-input"> -->
+
+                    <textarea id="note1" name="message" cols="40" rows="3" class="form-control"
+                        placeholder="Message" required="required"></textarea>
+                    <!-- </span>
+                    </label> -->
+                    <!-- <input name="submit" type="submit" id="submit" class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-bgcolor-darkgrey" value="SUBMIT NOW"> -->
+                    <!-- </form> -->
+                   
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button onclick="ApnaMessage1()" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                    <img src="./assets/images/brand.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!-- Start header -->
+        <header id="header">
+            <div class="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="contact-intro">
+                                <ul>
+                                    <li><span class="icon-colour"><svg fill="#000000" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M256,0C114.6,0,0,114.6,0,256s114.6,256,256,256c141.4,0,256-114.6,256-256S397.4,0,256,0z M256,469.3 c-117.8,0-213.3-95.5-213.3-213.3c0-117.8,95.5-213.3,213.3-213.3c117.8,0,213.3,95.5,213.3,213.3 C469.3,373.8,373.8,469.3,256,469.3z M234.7,234.7H128v42.7h149.3v-192h-42.7V234.7z"></path> </g></svg> Open Hours: Mon - Fri 10.00 A.M - 6.00 P.M</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+                            <div class="contact-intro">
+                                <ul>
+                                    <li><span class="icon-colour"><svg width="18px" height="18px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.2802 3.39001H4.99023C3.92937 3.39001 2.91195 3.81138 2.1618 4.56152C1.41166 5.31167 0.990234 6.32915 0.990234 7.39001V17.39C0.990234 18.4509 1.41166 19.4682 2.1618 20.2184C2.91195 20.9685 3.92937 21.39 4.99023 21.39H16.9902C18.0511 21.39 19.0685 20.9685 19.8187 20.2184C20.5688 19.4682 20.9902 18.4509 20.9902 17.39V12.1" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.6191 11.51C14.353 12.6619 12.7196 13.328 11.009 13.39C7.79903 13.39 4.59906 10.72 1.78906 5.39001" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19.0098 1.39001L20.4198 3.66002L23.0098 4.30002L21.2898 6.34001L21.4798 9.00002L19.0098 8.00002L16.5398 9.00002L16.7198 6.34001L15.0098 4.30002L17.5998 3.66002L19.0098 1.39001Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></i>services@itcouncil.in</span> </li>
+                                    <li> <span class="icon-colour"> <i class="fa fa-phone icon-colour"></i>+91 93923 94052</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-3 col-sm-12 col-12">
+                            <div class="contact-info">
+                                <ul class="social-icons">
+                                    <li><a href="tel:09392394052" target="_blank"><svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>whatsapp</title> <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path> </g></svg></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/" target="_blank"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="None" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#000000"></path> </g></svg></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/jadiyajii" target="_blank"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#000000"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#000000"></path> </g></svg></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/it-council-training-services/" target="_blank"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#000000"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#000000"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#000000"></path> </g></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end topbar -->
+            <div class="wpo-site-header">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <!-- <div class="container">
+                        <div class="row align-items-center"> -->
+                    <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                        <div class="mobail-menu">
+                            <button type="button" class="navbar-toggler open-btn">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.16675 6.25H20.8334M4.16675 12.5H20.8334M4.16675 18.75H20.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar first-angle"></span>
+                                <span class="icon-bar middle-angle"></span>
+                                <span class="icon-bar last-angle"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><img src="./assets/images/brand.svg
+                                " alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-1 col-1">
+                        <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                            <button class="menu-close"><i class="ti-close"></i></button>
+                            <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                <li class="menu-item-has-children"><a  href="index.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li class="menu-item-has-children">
+                                    <a class="active" href="#">Our Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                                        <!-- <li><a href="infosec-audit-training-hyderabad.html">Infosec-Audit</a></li> -->
+                                        <li><a href="web-development.html">Web Development</a></li>
+                                        <li><a href="devsecops.html">DevSecOps</a></li>
+                                        <li><a href="data-science.html">Data Science</a></li>
+                                        <li><a href="app-development.html">App Devlopment</a></li>
+                                        <!-- <li><a href="dell-boomi-training-hyderabad.html">Dell Boomi</a></li> -->
+                                        
+                                        <li><a href="it-staffing.html">IT Staffing</a></li>
+                                    </ul>
+                                </li>
+                               
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+
+                        </div><!-- end of nav-collapse -->
+                    </div>
+                    <div class="col col-lg-3 col-md-2 col-2">
+                        <div class="header-right">
+                           
+                            <div class="close-form" style="margin-right: 70px;">
+                                <a class="theme-btn" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                        class="fa fa-angle-double-right"></i> Enquire Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                    </div> -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- start wpo-page-title -->
+        <section class="" style="margin-top: -100px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/slider/4.svg" alt="Slide one" width="100%" height="100%">
+                </div>
+           <!-- end container -->
+        </section>
+        <!-- end page-title -->
+        <!-- .wpo-project-details-area start -->
+
+        <div class="wpo-project-details-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-1 order-md-2">
+                        <div class="wpo-service-sidebar">
+                            <div class="widget all-wpo-services">
+                                <h3>All Services</h3>
+                                <ul>
+                                    <li ><a
+                                            href="cyber-security.html">Cyber security</a></li>
+                                    <!-- <li><a href="infosec-audit-training-hyderabad.html">Infosec-Audit</a></li> -->
+                                    <li><a href="web-development.html">Web Development</a></li>
+                                    <li><a href="devsecops.html">DevSecOps</a></li>
+                                    <li><a href="data-science.html">Data Science</a></li>
+                                    <li><a href="app-development.html">App Development</a></li>
+                                    <!-- <li><a href="dell-boomi-training-hyderabad.html">Dell Boomi</a></li> -->
+                                    
+                                    <li class="current"><a href="it-staffing.html"> IT Staffing</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget contact-widget">
+                                <div>
+                                    <h5>Get in Touch for a Call</h5>
+                                    <h4>+91 93923 94052</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-2 order-md-1">
+                        <div class="wpo-minimals-wrap">
+                            <div class="minimals-img">
+                                <img src="../assets/images/web-security.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="wpo-p-details-section">
+                            <h4>IT Staffing</h4>
+                            <p>Let us first see what testing means; testing is crucial for any software deployment. And
+                                Cyber Security is another important part of the deployment of web
+                                applications. Testing is the process in which it is checked that all the features of the
+                                software work well or not. </p>
+                            <p>In this process, complete loopholes of the software are checked up so that any unexpected
+                                error does not occur in the software. The person responsible for testing in an IT
+                                industry is called a Tester, the tester receives the code from the coder, or we can say,
+                                developer. </p>
+                            <!-- <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="wpo-p-details-img">
+                                        <img src="./assets/images/service-single/2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="wpo-p-details-img">
+                                        <img src="./assets/images/service-single/3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+                            <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour,sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p> -->
+                        </div>
+                        <div class="wpo-faq-section">
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    How Does Our Subcontracts Approach Enhance IT Staffing?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p>In redefining IT staffing, our subcontract model stands as a dynamic pillar. We transcend traditional staffing paradigms by seamlessly integrating specialized subcontractors into our workforce. This approach ensures that our clients not only gain access to a diverse pool of skilled professionals but also benefit from the agility and expertise that subcontracting brings. By fostering collaboration and flexibility, our subcontract model elevates IT staffing to a responsive and results-driven dimension.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    What Sets Our Outsourcing Services Apart in IT Staffing?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p>Our IT staffing solutions extend beyond conventional outsourcing, embodying a strategic partnership model. We go beyond mere talent provision; we immerse ourselves in understanding client objectives and business intricacies. Through meticulous outsourcing, we bring on board skilled professionals who seamlessly integrate into existing teams. This collaborative synergy ensures that our outsourcing services transcend traditional vendor-client relationships, becoming an integral part of client success stories.</p>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    How Does Our Job-Assisted and Corporate Training Redefine IT Staffing?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p>In our commitment to nurturing IT talent, job-assisted training and corporate training take center stage. Job-assisted training goes beyond conventional learning, immersing individuals in real-world projects under expert guidance. This hands-on approach ensures that trainees not only acquire theoretical knowledge but also gain practical skills essential for the IT landscape. Simultaneously, our corporate training programs empower businesses to upskill their workforce, ensuring that their IT teams remain abreast of the latest technologies and methodologies, fostering continuous innovation and competitiveness.
+
+                                                        In essence, our IT staffing solutions encompass a dynamic spectrum of subcontracting, outsourcing, job-assisted training, and corporate training. By redefining traditional paradigms, we not only provide skilled professionals but also cultivate an environment where expertise, collaboration, and continuous learning thrive.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end wpo-faq-section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- .wpo-project-details-area end -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="./assets/images/brand3.svg" alt="blog">
+                                </div>
+                                <p>IT-Council: Your gateway to modern Software Technology Training. We specialize in empowering students and fresh talent with cutting-edge IT skills. Dive into our training programs for a future-ready career. Elevate your potential with us.</p>
+
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Link</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="index.html">Home </a></li>
+                                    <li><a href="courses.html">Courses</a></li>
+                                    <li><a href="it-staffing.html">For Companies</a></li>
+                                    <li><a href="contact.html">Contact Us </a></li>
+                                    <li><a href="https://www.instagram.com/cloudburst_community/">Developers </a></li>
+                        
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Services</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                                    <!-- <li><a href="infosec-audit-training-hyderabad.html">Infosec-Audit</a></li> -->
+                                    <li><a href="web-development.html">Web Development</a></li>
+                                    <li><a href="devsecops.html">DevSecOps</a></li>
+                                    <li><a href="data-science.html">Data Science</a></li>
+                                    <!-- <li><a href="dell-boomi-training-hyderabad.html">Dell Boomi</a></li> -->
+                                    <li><a href="app-development.html">App Development</a></li>
+    
+                                    <li><a href="it-staffing.html"> IT Staffing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Get in Touch</h3>
+                                </div>
+                                <p>Address: Bengaluru East White Field road, Karnataka-560016, India
+                                   </p>
+                                <p>Phone: <br>+91 93923 94052 </p>
+                                <p>Email: Services@itcouncil.in </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div style="text-align:left;" class="col-lg-6 col-md-12 col-12">
+                            <p class="copyright"> Copyright &copy; <span id="copyRightYear"></span> IT Council
+                                 | All Rights Reserved</p>
+                        </div>
+                        <!-- <div style="text-align:right;" class="col-lg-6 col-md-12 col-12">
+                            <p class="copyright"> Developed by <a href="https://www.honeysofttechnologies.com/" target="_blank"><img src="./assets/images/honey-soft-logo.png" alt="logo" title="Honey Soft Technologies"></p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <div class="icon-bar">
+        <a href="tel:09392394052" class="phone"><i class="fa fa-phone fa-"></i></a>
+        <a href="https://wa.me/+919392394052" class="whatsapp"><svg fill="#ffffff" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>whatsapp</title> <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path> </g></svg></a>
+        <a href="mailto:services@itcouncil.in" class="mailto"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="./assets/js/modernizr.custom.js"></script>
+    <script src="./assets/js/jquery.dlmenu.js"></script>
+    <script src="./assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // naya fucntion
+function ApnaMessage1() {
+  var name = document.getElementById("name1").value;
+  var phone = document.getElementById("number1").value;
+  var email = document.getElementById("email1").value;
+  var msg = document.getElementById("note1").value;
+  var subject = document.getElementById("subject1").value;
+
+  if (name && phone && email && msg && subject) {
+    var formData = {
+      name: name,
+      phone: phone,
+      email: email,
+      msg: msg,
+      subject: subject
+    };
+
+    // Make a POST request to Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbxxUkm2hAXsGuwwiMfNXu6909IZrpnQSWikQvkApuxn9q5A4gM-HynIM1Ih1rsOpBby/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams(formData)
+    })
+    .then(response => {
+        alert('Successfully Submitted.');
+document.getElementById("name1").value = "";
+document.getElementById("number1").value = "";
+document.getElementById("email1").value = "";
+document.getElementById("note1").value = "";
+document.getElementById("subject1").value = "";
+
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while submitting the form. Please try again later.');
+    });
+
+
+  } else {
+    alert("Please fill in all the fields!");
+}
+}
+    </script>
+</body>
+
+
+</html>
