@@ -1,38 +1,51 @@
-name: Java snyk security pipeline 
+name: Java Snyk Security Pipeline
 
 on:
   push:
-     branches:
-        -main 
+    branches:
+      - main
 
-     jobs:
-        security-scan:
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout Source Code
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-        runs-on: ubuntu-latest 
+      # Setup Java
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
 
-      steps: 
+      # Build Maven Project
+      - name: Build Application
+        run: mvn clean install
 
-            # checkout source code 
-            - name: checkout code
-              usess: actions/checkout@v4
+      # Install Snyk CLI
+      - name: Install Snyk CLI
+        run: npm install -g snyk
 
-              # setup java 
-            - name: setup java
-              uses: actions/setup-java@v4
-              with:
-                java-version: '17'
+      # Authenticate Snyk
+      - name: Authenticate Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
 
-              # Build maven project 
-            - name: build application 
-              run: mvn clean install 
+      # SCA Scan
+      - name: Run SCA Scan
+        run: snyk test --severity-threshold=high
 
-              # install snyl cli 
-            - name: Install snyl cli 
-              run: npm install -g snyk 
+      # SAST Scan
+      - name: Run SAST Scan
+        run: snyk code test --severity-threshold=high
 
-              # authenticate snyk cli
-            - name: Authenticate snyk cli
-              run: snyk auth ${{ secrets.SNYK_TOKEN }}
+      # IaC Scan
+      - name: Run IaC Scan
+        run: snyk iac test
 
-            - name: monitor
-              run: synk mointor 
+      # Upload Results
+      - name: Monitor Project
+        run: snyk monitor
+
+        
