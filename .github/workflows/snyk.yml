@@ -40,12 +40,12 @@ jobs:
         run: snyk test 
 
       # SAST Scan
-      #  - name: Run SAST Scan
-        # run: snyk code test 
-        
+      - name: Run SAST Scan
+        run: snyk code test
+
       # IaC Scan
       #- name: Run IaC Scan
-       # run: snyk iac test
+      #  run: snyk iac test
 
       # Monitor Project in Snyk 
 
