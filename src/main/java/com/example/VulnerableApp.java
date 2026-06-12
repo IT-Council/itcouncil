@@ -1,4 +1,4 @@
-```java
+
 package com.example;
 
 import java.sql.Connection;
@@ -94,4 +94,4 @@ public class VulnerableApp extends HttpServlet {
         }
     }
 }
-```
+
