@@ -44,8 +44,6 @@ jobs:
       - name: Run IaC Scan
         run: snyk iac test
 
-      # Upload Results
-      - name: Monitor Project
-        run: snyk monitor
+    
 
         
