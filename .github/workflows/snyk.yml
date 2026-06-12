@@ -1,0 +1,38 @@
+name: Java snyk security pipeline 
+
+on:
+  push:
+     branches:
+        -main 
+
+     jobs:
+        security-scan:
+
+        runs-on: ubuntu-latest 
+
+      steps: 
+
+            # checkout source code 
+            - name: checkout code
+              usess: actions/checkout@v4
+
+              # setup java 
+            - name: setup java
+              uses: actions/setup-java@v4
+              with:
+                java-version: '17'
+
+              # Build maven project 
+            - name: build application 
+              run: mvn clean install 
+
+              # install snyl cli 
+            - name: Install snyl cli 
+              run: npm install -g snyk 
+
+              # authenticate snyk cli
+            - name: Authenticate snyk cli
+              run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
+            - name: monitor
+              run: synk mointor 
