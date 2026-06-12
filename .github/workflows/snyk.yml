@@ -32,6 +32,9 @@ jobs:
       - name: Authenticate Snyk
         run: snyk auth ${{ secrets.SNYK_TOKEN }}
 
+      - name: verify Snyk Authentication
+        run: snyk whoami
+
       # SCA Scan
       - name: Run SCA Scan
         run: snyk test 
